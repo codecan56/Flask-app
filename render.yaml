@@ -1,0 +1,11 @@
+# Exported from Render on 2025-04-14T18:19:49Z
+services:
+- type: web
+  name: Flask-app
+  runtime: python
+  repo: https://github.com/codecan56/Flask-app
+  plan: free
+  region: oregon
+  buildCommand: pip install -r requirements.txt
+  startCommand: gunicorn your_application.wsgi
+version: "1"
